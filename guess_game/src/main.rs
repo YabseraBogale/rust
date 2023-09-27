@@ -11,7 +11,10 @@ fn main() {
         io::stdin().read_line(&mut input)
                 .expect("Falied to get number");
         println!("You guessed: {}", input);
-        let guess: i32=input.trim().parse().expect("Please Enter Number Type");
+        let guess: i32=match input.trim().parse() {
+            Ok(num)=> num,
+            Err(_)=>continue,
+        };
         match guess.cmp(&secret_number){
             Ordering::Less=> println!("Less"),
             Ordering::Greater=>println!("Greater"),
