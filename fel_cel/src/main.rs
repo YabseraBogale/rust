@@ -1,4 +1,4 @@
-use std::{io, num::ParseIntError};
+use std::io;
 fn main() {
     loop {
         println!("Temprture Converter");
