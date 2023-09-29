@@ -1,3 +1,5 @@
+extern crate rand;
+use rand::Rng;
 fn main() {
-    println!("Hello, world!");
+    println!("Random number {}",);
 }
