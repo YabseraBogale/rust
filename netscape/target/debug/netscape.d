@@ -1,0 +1,1 @@
+/media/yabsera/New\ Volume/github/rust/netscape/target/debug/netscape: /media/yabsera/New\ Volume/github/rust/netscape/src/client.rs /media/yabsera/New\ Volume/github/rust/netscape/src/lib.rs /media/yabsera/New\ Volume/github/rust/netscape/src/main.rs
