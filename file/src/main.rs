@@ -1,11 +1,15 @@
+use std::io;
+use  std::io::Read;
 use std::fs::File;
+
+
+fn read_file()->Result<String,io::Error>{
+    let mut f=File::open("hello.txt")?;
+    let mut s=String::new();
+    f.read_to_string(&mut s)?;
+    return Ok(s);
+}
 fn main() {
-    let f=File::open("hello.txt");
-    /*
-        let f =match f {
-        Ok(file)=>file,
-        Err(error)=>panic!("File doesn't exists {:?}",error),
-        };
-     */
+   read_file();
 
 }
