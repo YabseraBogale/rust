@@ -18,15 +18,7 @@ impl LetterCounter {
 }
 
 fn main() {
-    //let count=LetterCounter{word:String::from("Hello World"),letter:'_',counter:0};
-    let word=String::from("Hello World");
-    let mut ccount=0;
-    for i in word.chars(){
-        if i=='l'{
-            ccount+=1;
-            println!("{}",i.to_string());
-        }
-    }
-    println!("L in hello world is {}",ccount);
+    let count=LetterCounter{word:String::from("Hello World"),letter:'_',counter:0};
+    
     
 }
