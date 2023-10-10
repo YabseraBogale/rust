@@ -7,18 +7,19 @@ struct LetterCounter{
 
 impl LetterCounter {
     fn count_letter(&self,l:char)->i32{
-        let mut count=0;
-        for i in self.word.as_bytes(){
-            if l.to_string()==i.to_string(){
-
+        let mut counted=0;
+        for i in self.word.chars(){
+            if l==i{
+                counted+=1;
             }
         }
-        count
+        counted
     }
 }
 
 fn main() {
     let count=LetterCounter{word:String::from("Hello World"),letter:'_',counter:0};
-    
-    
+    let word=count.word.clone();
+    let counted=count.count_letter('l');
+    println!("the character in {:?} is counted {}",word,counted);
 }
