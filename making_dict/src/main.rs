@@ -19,7 +19,5 @@ impl LetterCounter {
 
 fn main() {
     let count=LetterCounter{word:String::from("Hello World"),letter:'_',counter:0};
-    let word=count.word.clone();
-    let counted=count.count_letter('l');
-    println!("the character in {:?} is counted {}",word,counted);
+    println!("the character in {:?} is counted {}",count.word,count.count_letter('o'));
 }
