@@ -15,6 +15,9 @@ impl LetterCounter {
         }
         counted
     }
+    fn counted_dict(&self) -> LetterCounter{
+        
+    }
 }
 
 fn main() {
